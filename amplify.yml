@@ -9,11 +9,11 @@ frontend:
         - mv hugo /usr/local/bin/
         - rm hugo_extended_0.153.0_Linux-64bit.tar.gz
         - echo "HUGO 0.153.0 INSTALLED"
-        - curl -LO "https://dl.google.com/go/go1.25.5.linux-amd64.tar.gz"
-        - tar -C /usr/local -xzf go1.25.5.linux-amd64.tar.gz
+        - curl -LO "https://dl.google.com/go/go1.24.10.linux-amd64.tar.gz"
+        - tar -C /usr/local -xzf go1.24.10.linux-amd64.tar.gz
         - export PATH=$PATH:/usr/local/go/bin
-        - rm go1.25.5.linux-amd64.tar.gz
-        - echo "GO 1.25.5 INSTALLED"
+        - rm go1.24.10.linux-amd64.tar.gz
+        - echo "GO 1.24.10 INSTALLED"
         - npm install
     build:
       commands:
