@@ -3,7 +3,7 @@ title: "Gate Review Risk Management System"
 meta_title: "Gate Review Risk Management System"
 description: "Quality check process and supporting tool for early development cycle assessment"
 date: 2023-06-01T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/solutions/gate-review-risk-management.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["risk-management", "google-workspace", "process-automation"]

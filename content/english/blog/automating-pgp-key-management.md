@@ -32,7 +32,7 @@ Depending on your VPS, some of these may be needed while others may already be i
 
 ## Install needed packages ##
 Let's get started by installing the needed packages except for the 1Password-CLI.  You'll need to be logged in as root OR have sudo installed already.
-```
+```bash
 sudo apt install -y openssh-server libpam-google-authenticator nano gnupg curl
 ```
 
@@ -40,40 +40,43 @@ sudo apt install -y openssh-server libpam-google-authenticator nano gnupg curl
 *Source: https://developer.1password.com/docs/cli/get-started*
 
 Add the key for the 1Password apt repository:
-```
+```bash
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
  sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 ```
 
 Add the 1Password apt repository:
-```
+```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/$(dpkg --print-architecture) stable main" |
  sudo tee /etc/apt/sources.list.d/1password.list
 ```
 
 Add the debsig-verify policy:
-```
+```bash
 sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
 ```
-```
+
+```bash
 curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | \
  sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
 ```
-```
+
+```bash
 sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 ```
-```
+
+```bash
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | \
  sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
 ```
 
 Install 1Password CLI:
-```
+```bash
 sudo apt update && sudo apt install 1password-cli
 ```
 
 Check that 1Password CLI installed successfully:
-```
+```bash
 op --version
 ```
 
@@ -92,16 +95,19 @@ op --version
 
 Note that after creating a service account, you can't edit its ability to create vaults or the permissions it has for vaults it can access.
 
-** The Service Account Creation Wizard only shows the service account token once. Save the token in 1Password immediately to avoid losing it. Treat this token like a password, and don't store it in plaintext.
+{{< notice "warning" >}}
+**The Service Account Creation Wizard only shows the service account token once. Save the token in 1Password immediately to avoid losing it. Treat this token like a password, and don't store it in plaintext.
+{{< /notice >}}
+
 
 **Set ENV Variable with Token**
 Enter the following at the command line:
-```
+```bash
 export OP_SERVICE_ACCOUNT_TOKEN=<your-service-account-token>
 ```
 
 Test that it worked.
-```
+```bash
 op user get --me
 ```
 
@@ -114,16 +120,16 @@ Generally, the next part will do the following:
 5) Export the public key and upload it to the user's vault and a company-wide key ring.
 6) Export the private key and upload it to the user's vault.
 
-![Swimlane process diagram](/images/blog/Key-Issuance-1.jpg)
+![Swimlane process diagram](/images/solutions/key-issuance-process.jpg)
 
 ## Creating the script ##
 Enter your favorite text editor.
-```
+```bash
 nano issueKey.sh
 ```
 Copy/paste the below BASH script.
 
-```
+```bash
 #!/usr/bin/env bash
 # This script will create the needed 1Password Vaults, issue PGP certs/sub-keys, and upload
 # to the correct 1Password Vaults.
