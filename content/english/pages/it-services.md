@@ -44,19 +44,19 @@ When you partner with KilPen for IT services, we become your dedicated technolog
 
 ## Why Organizations Choose KilPen
 
-#### 1. Predictable Costs
-Flat-rate pricing means no surprise bills. You know exactly what IT costs each month, making budgeting straightforward.
+1. Predictable Costs
+Clear rates or flat-rate pricing means no surprise bills. You know exactly what IT costs each month, making budgeting straightforward.
 
-#### 2. Reduced Downtime
+2. Reduced Downtime
 We monitor your systems proactively, catching and resolving issues before they disrupt your work.
 
-#### 3. Mission-Aligned Support
+3. Mission-Aligned Support
 We understand nonprofits and social enterprises. Our recommendations prioritize your mission, not upselling.
 
-#### 4. Responsive Expertise
+4. Responsive Expertise
 When something breaks, you get a real person who knows your systems—not a ticket queue.
 
-#### 5. Peace of Mind
+5. Peace of Mind
 Focus on your work knowing that qualified professionals are keeping your technology secure and running.
 
 ## How We Work Together
