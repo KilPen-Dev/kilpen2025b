@@ -1,1 +1,34 @@
 /* Add your own custom styles here */
+
+/* ==========================================================================
+   Syntax Highlighting - Override theme's prose styles to allow Chroma colors
+   ========================================================================== */
+
+/* Allow Chroma's background color instead of theme's bg-light */
+.content .highlight pre,
+.prose .highlight pre {
+  @apply !bg-[#272822]; /* Monokai background color */
+}
+
+/* Allow Chroma's syntax colors instead of forcing primary color */
+.content .highlight code,
+.prose .highlight code {
+  @apply !text-[#f8f8f2]; /* Monokai default text color */
+}
+
+/* Ensure proper padding and overflow for code blocks */
+.content .highlight pre,
+.prose .highlight pre {
+  @apply p-4 overflow-x-auto;
+}
+
+/* Style inline code (not in highlight blocks) differently */
+.content code:not(.highlight code),
+.prose code:not(.highlight code) {
+  @apply bg-light dark:bg-darkmode-light px-1.5 py-0.5 rounded text-sm;
+}
+
+/* Optional: Add line numbers styling if enabled */
+.highlight .ln {
+  @apply mr-4 text-gray-500 select-none;
+}
