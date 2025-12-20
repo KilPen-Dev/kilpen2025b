@@ -1,14 +1,25 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center bg-cover">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
+    {{ $image := resources.Get .image }}
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <div
+          class="w-full h-full bg-cover bg-center bg-fixed"
+          style="background-image: url('{{ $image.RelPermalink }}');">
+        </div>
+        <!-- Overlay for text readability -->
+        <div class="absolute inset-0 bg-black/50 dark:bg-black/60"></div>
+      </div>
+      <!-- Content -->
+      <div class="container relative z-10">
+        <div class="row justify-center">
+          <div class="lg:col-8 md:col-10 text-center">
+            <h1 class="mb-4 text-h3 lg:text-h1 text-white">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <p class="mb-8 text-lg text-gray-200">
               {{ .content | markdownify }}
             </p>
             {{ with .button }}
@@ -24,9 +35,6 @@
                 </a>
               {{ end }}
             {{ end }}
-          </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
           </div>
         </div>
       </div>
