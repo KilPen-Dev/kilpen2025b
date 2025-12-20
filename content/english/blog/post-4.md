@@ -1,7 +1,7 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "System Architecture Design Principles"
 meta_title: ""
-description: "this is meta description"
+description: "Key principles for designing scalable system architectures"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Architecture"]

@@ -1,7 +1,7 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Emerging Technology Trends in Data Management"
 meta_title: ""
-description: "this is meta description"
+description: "Exploring the latest technology trends in data management"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Technology", "Data"]

@@ -1,7 +1,7 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Building Data-Driven Applications"
 meta_title: ""
-description: "this is meta description"
+description: "Learn how to build modern data-driven applications"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Application", "Data"]

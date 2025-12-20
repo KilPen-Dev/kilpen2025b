@@ -1,7 +1,7 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "Best Practices for Modern Software Development"
 meta_title: ""
-description: "this is meta description"
+description: "Best practices and tools for modern software development"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Software"]
