@@ -3,7 +3,7 @@ title: "Image Conversion Using API"
 meta_title: "Automated Image Conversion Solution"
 description: "Automated solution for batch image format conversion using Google Workspace and APIs"
 date: 2023-06-01T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/solutions/image-conversion-api.png"
 categories: ["Solutions"]
 author: "Chris"
 tags: ["automation", "api", "google-workspace"]
