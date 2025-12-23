@@ -23,4 +23,4 @@ hugo --gc --minify
 
 ## Deployment
 
-Site is deployed via GitHub Pages at [kilpen.dev](https://kilpen.dev)
+Site is deployed via GitHub Pages at [kilpen.com](https://kilpen.com)

@@ -13,7 +13,6 @@ Your message has been successfully submitted. A member of our team will review y
 **What happens next?**
 
 - We typically respond within 1-2 business days
-- Check your email for a confirmation
 - For urgent matters, please note this in your message
 
 [Return to Home](/) | [Contact Us Again](/contact/)
