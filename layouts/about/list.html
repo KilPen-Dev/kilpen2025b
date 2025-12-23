@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ $image := resources.Get .Params.image }}
+  <section class="section-sm about-hero" {{ with $image }}style="background-image: url('{{ .RelPermalink }}');"{{ end }}>
+    <div class="about-hero-overlay"></div>
+    <div class="container relative z-10">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8 text-center">
+          <h2 class="h3 mb-6">{{ .Title }}</h2>
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

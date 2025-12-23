@@ -123,6 +123,35 @@
 }
 
 /* ==========================================================================
+   About Page - Semi-transparent Background Image
+   ========================================================================== */
+
+.about-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+/* Dark mode support */
+.dark .about-hero-overlay {
+  background-color: rgba(28, 28, 28, 0.9);
+}
+
+/* Ensure content is above the overlay */
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
    Syntax Highlighting - Override theme's prose styles to allow Chroma colors
    ========================================================================== */
 
