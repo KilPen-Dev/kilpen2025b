@@ -79,8 +79,8 @@ The instructions below describe how to create an extension module and add new fi
 
 1. **id** – the internal attribute code; avoid spaces and accents.
 2. **xsi:type** – the attribute type from the XML data model reference. Common types include AttributeString, AttributeText (multiline), AttributeDate, AttributeDateTime, AttributeDecimal, AttributeEnum (for drop‑down lists) and AttributeExternalKey (for links to other objects).
-3. **<sql>** – the column name in the database table. It is good practice to use the same name as the attribute code.
-4. **<is_null_allowed>** – whether the field can be empty. Set to false if you want the field mandatory.
+3. **`<sql>`** – the column name in the database table. It is good practice to use the same name as the attribute code.
+4. **`<is_null_allowed>`** – whether the field can be empty. Set to false if you want the field mandatory.
 5. **Additional tags** (e.g., <digits> and <decimals> for decimals; <values> for enumerations). For an enum field, use:
 ```xml
 <field id="maintenance_type" xsi:type="AttributeEnum" _delta="define">

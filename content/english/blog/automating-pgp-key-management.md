@@ -35,7 +35,7 @@ Let's get started by installing the needed packages except for the 1Password-CLI
 ```bash
 sudo apt install -y openssh-server libpam-google-authenticator nano gnupg curl
 ```
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="kilpen" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
 **Now, let's install the 1Password-CLI.**
 *Source: https://developer.1password.com/docs/cli/get-started*
 
