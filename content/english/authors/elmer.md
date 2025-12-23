@@ -5,17 +5,9 @@ image: "/images/elmer.png"
 description: Technology Project Manager
 weight: 2
 social:
-  - name: github
-    icon: fa-brands fa-github
-    link: https://github.com
-
-  - name: twitter
-    icon: fa-brands fa-twitter
-    link: https://twitter.com
-
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+    link: https://www.linkedin.com/in/elmeraquino/
 ---
 
 Technical Project Manager

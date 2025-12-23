@@ -26,8 +26,8 @@ name = "Services"
 
 [[main]]
 parent = "Services"
-name = "Managed IT"
-url = "/it-services"
+name = "IT Operations"
+url = "/it-ops"
 
 [[main]]
 parent = "Services"

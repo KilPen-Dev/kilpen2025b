@@ -1,6 +1,6 @@
 ---
-title: "IT Services"
-meta_title: "IT Services | KilPen Technical Services"
+title: "IT Operations"
+meta_title: "IT Operations | KilPen Technical Services"
 description: "Reliable IT support for nonprofits and mission-driven organizations. Proactive monitoring, helpdesk support, and infrastructure services with predictable pricing."
 draft: false
 ---
