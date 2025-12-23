@@ -111,7 +111,7 @@ Test that it worked.
 op user get --me
 ```
 
-# The Automation #
+## The Automation
 Generally, the next part will do the following:
 1) Create a 1Password Vault and share it with the user.
 2) Create a 1Password item for the PGP Passphrase.
