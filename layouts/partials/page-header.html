@@ -1,0 +1,8 @@
+<section>
+  <div class="container text-center">
+    <div class="page-header-charcoal rounded-2xl px-8 py-14">
+      <h1 class="text-white">{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
+      {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6 breadcrumb-light") }}
+    </div>
+  </div>
+</section>

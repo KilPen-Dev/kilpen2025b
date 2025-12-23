@@ -1,6 +1,54 @@
 /* Add your own custom styles here */
 
 /* ==========================================================================
+   Page Header - Dark Charcoal with Subtle Grid Pattern
+   ========================================================================== */
+
+.page-header-charcoal {
+  background-color: #1F2937;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  position: relative;
+}
+
+/* Subtle inner glow/vignette effect */
+.page-header-charcoal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Ensure content stays above the overlay */
+.page-header-charcoal > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Light breadcrumb styling for dark background */
+.breadcrumb-light,
+.breadcrumb-light a,
+.breadcrumb-light span,
+.breadcrumb-light li,
+.breadcrumb-light .text-primary,
+.breadcrumb-light .dark\:text-darkmode-primary {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.breadcrumb-light a:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Breadcrumb separator styling */
+.breadcrumb-light li span.mr-1 {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ==========================================================================
    Syntax Highlighting - Override theme's prose styles to allow Chroma colors
    ========================================================================== */
 
