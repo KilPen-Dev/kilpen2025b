@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Information Technology Services with Aloha"
+  title: "Information Technology with Aloha "
   content: "Proudly serving Hawaii vibes to global companies and nonprofits."
   image: "/images/hard-at-work.png"
   button:
