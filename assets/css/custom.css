@@ -49,6 +49,48 @@
 }
 
 /* ==========================================================================
+   Footer - Dark Grey Style
+   ========================================================================== */
+
+.footer-dark {
+  background-color: #374151; /* Darker grey - Tailwind gray-700 */
+}
+
+.footer-dark .navbar-brand img {
+  filter: brightness(0) invert(1); /* Make logo white for dark background */
+}
+
+.footer-dark a,
+.footer-dark .footer-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.2s ease;
+}
+
+.footer-dark a:hover,
+.footer-dark .footer-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.footer-dark .social-icons a,
+.footer-dark .footer-social-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.footer-dark .social-icons a:hover,
+.footer-dark .footer-social-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.footer-copyright {
+  background-color: #1F2937; /* Even darker for copyright section - Tailwind gray-800 */
+  border-color: #4B5563 !important; /* Tailwind gray-600 */
+}
+
+.footer-copyright p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ==========================================================================
    Syntax Highlighting - Override theme's prose styles to allow Chroma colors
    ========================================================================== */
 
