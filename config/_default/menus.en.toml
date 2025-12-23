@@ -28,16 +28,19 @@ name = "Services"
 parent = "Services"
 name = "IT Operations"
 url = "/it-ops"
+weight = 1
 
 [[main]]
 parent = "Services"
 name = "Tech Consulting"
 url = "/technology-consulting"
+weight = 2
 
 [[main]]
 parent = "Services"
 name = "Bespoke Services"
 url = "/bespoke-services"
+weight = 3
 
 [[main]]
 name = "Blog"
