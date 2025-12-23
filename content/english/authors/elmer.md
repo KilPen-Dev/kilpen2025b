@@ -3,6 +3,7 @@ title: Elmer
 email: elmer@kilpen.com
 image: "/images/elmer.png"
 description: Technology Project Manager
+group: core
 weight: 2
 social:
   - name: linkedin
