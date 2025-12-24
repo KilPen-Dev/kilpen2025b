@@ -43,7 +43,7 @@ We'll add the following fields to the WebApplication object:
 
 Create a folder called `webapp-extended-attributes` with the following files:
 
-```
+```bash
 webapp-extended-attributes/
 ├── module.webapp-extended-attributes.php
 ├── datamodel.webapp-extended-attributes.xml
@@ -531,7 +531,7 @@ crontab -e
 ```
 
 Add this line:
-```
+```bash
 0 2 * * * /path/to/sync-prod-to-dev.sh >> /var/log/itop-sync.log 2>&1
 ```
 
