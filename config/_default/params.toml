@@ -110,7 +110,7 @@ map_marker = "images/marker.png"
 [plausible]
 enable = true
 domain = "kilpen.com"
-selfhosted_domain = "https://plausible.kilpen.com"
+selfhosted_domain = "plausible.kilpen.com"
 
 # Subscription
 [subscription]
